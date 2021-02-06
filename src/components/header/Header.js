@@ -57,7 +57,7 @@ export default class Header extends Component {
         let isLogged = this.state.connector.isLogged();
 
         let messages = {
-            omega: <Message id='toolbar.omega' defaultMessage='Omega' />,
+            omega: <Message id='toolbar.omega' defaultMessage='nsi.xyz' />,
             install: <Message id='toolbar.install' defaultMessage='Install' />,
             releases: <Message id='toolbar.releases' defaultMessage='Releases' />,
             simulator: <Message id='toolbar.simulator' defaultMessage='Simulator' />,
