@@ -20,7 +20,7 @@ import { CookiesConsent } from '@quentinguidee/react-jade-ui'
 
 import { IntlProvider } from "react-intl";
 import translations from './i18n/locales'
-import Wiki from './pages/Wiki';
+// import Wiki from './pages/Wiki';
 import Beta from './pages/Beta';
 
 class App extends Component {
