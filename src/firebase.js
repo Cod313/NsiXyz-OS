@@ -1,18 +1,19 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDVGEyNqgLCCerqbqGmUQ3mMxu8M4sYZvo",
-    authDomain: "omega-numworks.firebaseapp.com",
-    databaseURL: "https://omega-numworks.firebaseio.com",
-    projectId: "omega-numworks",
-    storageBucket: "omega-numworks.appspot.com",
-    messagingSenderId: "172338146789",
-    appId: "1:172338146789:web:3000e6cb87d21249c8530c",
-    measurementId: "G-P9YFFF08LN"
+  apiKey: "AIzaSyChjRnzPZhBcl_gvWMFP1GZg87kh0kqyBc",
+  authDomain: "nsixyz.firebaseapp.com",
+  projectId: "nsixyz",
+  storageBucket: "nsixyz.appspot.com",
+  messagingSenderId: "417882642825",
+  appId: "1:417882642825:web:4c214289b48f40fd2f6958",
+  measurementId: "G-6BSHHGK4KB",
 };
 
 firebase.initializeApp(firebaseConfig);
 
-export var messaging = firebase.messaging.isSupported() ? firebase.messaging() : null;
+export var messaging = firebase.messaging.isSupported()
+  ? firebase.messaging()
+  : null;
 
 export default firebase;
