@@ -33,6 +33,5 @@ export const releases = {
         "0100": ["en", "fr", "nl", "pt", "it", "de", "es", "hu"],
       },
     },
-    },
   ],
 };
