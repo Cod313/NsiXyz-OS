@@ -1,5 +1,5 @@
 export const releases = {
-  latest: "nsi.xyz-OS.1.0",
+  latest: "nsi.xyz-OS.1.2",
   firmwares: [
     {
       name: "nsi.xyz-OS.1.2",
