@@ -4,7 +4,7 @@ export const releases = {
     {
       name: "nsi.xyz-OS.1.2",
       commit: "46658f7077045b28906e257f544414e41f62381a",
-      changelog: ["New: Just nsi.xyz-OS", "Fix: No fix", "Change: No change"],
+      changelog: ["New: ", "Ver: 2021-02-14", "Change: Light-Mode"],
       compatibility: {
         N0110: true,
         N0100: false,
@@ -20,7 +20,7 @@ export const releases = {
     {
       name: "nsi.xyz-OS.1.1",
       commit: "46658f7077045b28906e257f544414e41f62381a",
-      changelog: ["New: Just nsi.xyz-OS", "Fix: No fix", "Change: Dark-Mode"],
+      changelog: ["New: ", "Fix: No fix", "Change: Dark-Mode"],
       compatibility: {
         N0110: true,
         N0100: false,
