@@ -36,7 +36,7 @@ export const releases = {
     {
       name: "nsi.xyz-OS.1.1_Controleur",
       commit: "46658f7077045b28906e257f544414e41f62381a",
-      changelog: ["New: ", "Ver: 2021-02-14", "Change: Utilitaire : Controleur de solde en temps réel"],
+      changelog: ["New: ", "Ver: 2021-02-14", "Change: Utilitaire : Controleur de solde en temps reel"],
       compatibility: {
         N0110: true,
         N0100: false,
