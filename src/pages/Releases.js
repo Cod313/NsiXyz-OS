@@ -9,7 +9,7 @@ export default class Releases extends Component {
     constructor(props) {
         super(props);
         
-        document.title = "Omega — Releases"
+        document.title = "NSIos — Releases"
     }
 
     render() {
@@ -17,7 +17,7 @@ export default class Releases extends Component {
             <div className="content">
                 <div className="releases__banner">
                     <div className="releases__banner__title">
-                        <FormattedMessage id="releases.title" defaultMessage="Omega version history" />
+                        <FormattedMessage id="releases.title" defaultMessage="NSIos version history (template of OMEGA)" />
                     </div>
                 </div>
                 <div style={ { height: "16px" } }></div>
