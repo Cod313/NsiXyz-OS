@@ -48,7 +48,7 @@ export default class Install extends Component {
             hideEnableNotificationPopup: false
         }
 
-        document.title = "Omega — Install"
+        document.title = "NSIos — Install"
 
         this.componentDidUpdate = this.componentDidUpdate.bind(this);
         this.detectCalculator = this.detectCalculator.bind(this);
@@ -254,21 +254,21 @@ export default class Install extends Component {
                         <img className={"installer__calculator__body " + (this.state.osDetected === "epsilon" ? "installer__calculator__body-active" : "")} src={ImgCalculatorBodyEpsilon} alt="Calculator Body"></img>
                     </div>
                     <div className="installer__content">
-                        <div className="installer__content__name">{this.state.showTags ? <FormattedMessage id="installer.owner" defaultMessage="{name}'s Numworks" values={{name: this.state.username}} /> : <FormattedMessage id="installer.title" defaultMessage="Omega Installer" />}</div>
+                        <div className="installer__content__name">{this.state.showTags ? <FormattedMessage id="installer.owner" defaultMessage="{name}'s Numworks" values={{name: this.state.username}} /> : <FormattedMessage id="installer.title" defaultMessage="NSIos Installer" />}</div>
                         <div className={"installer__content__tag installer__content__tag-gray " + (this.state.showTags ? "installer__content__tag-active" : "")}>{this.state.model}</div>
                         <div className={"installer__content__tag installer__content__tag-red " + (this.state.showTags && !this.state.install ? "installer__content__tag-active" : "")}>‎Ω {this.state.omegaVersion}</div>
                         <div className={"installer__content__tag installer__content__tag-yellow " + (this.state.showTags && !this.state.install ? "installer__content__tag-active" : "")}>‎E {this.state.epsilonVersion}</div>
                         <div className={"installer__content__progress " + (this.state.install ? "installer__content__progress-active" : "")}>
                             <div className="installer__content__progress__bar" style={{ width: this.state.progressPercentage + "%" }}></div>
                         </div>
-                        <div className={"installer__content__progress__message " +  (this.state.install ? "installer__content__progress__message-active" : "")}><FormattedMessage id="installer.installing" defaultMessage="Installing Omega {version}. Please do not unplug your Numworks." values={{version: this.state.installerInstance.toInstall}} /></div>
+                        <div className={"installer__content__progress__message " +  (this.state.install ? "installer__content__progress__message-active" : "")}><FormattedMessage id="installer.installing" defaultMessage="Installing Omega {version} with the NSIos template. Please do not unplug your Numworks." values={{version: this.state.installerInstance.toInstall}} /></div>
                         <div className={"installer__content__error " +  (this.state.error ? "installer__content__error-active" : "")}>{this.state.errorMessage}</div>
                         <div className="installer__content__buttons">
                             <Button onClick={this.detectCalculator} className={"installer__content__buttons__button " +  (!this.state.calculatorDetected ? "installer__content__buttons__button-active" : "")} blue>
                                 <FormattedMessage id="installer.detect" defaultMessage="DETECT CALCULATOR" />
                             </Button>
                             <Button onClick={this.install} className={"installer__content__buttons__button" + ((this.state.calculatorDetected && !this.state.install && !this.state.installationFinished) ? " installer__content__buttons__button-active" : "")} disabled={this.state.showPopup} blue>
-                                <FormattedMessage id="installer.install" defaultMessage="INSTALL OMEGA" />
+                                <FormattedMessage id="installer.install" defaultMessage="INSTALL NSIos" />
                             </Button>
                             <div className={"installer__content__buttons__language " + ((this.state.calculatorDetected && !this.state.install && !this.state.installationFinished) ? " installer__content__buttons__language-active" : "")}>
                                 {langs_list_html}
@@ -278,12 +278,12 @@ export default class Install extends Component {
                 </div>
 
                 <div className={"popup " + (this.state.showPopup ? "popup-active" : "")}>
-                    <FormattedMessage id="installer.disclaimer" defaultMessage="Omega is a redistribution of Epsilon that adds various features to it. We spend a lot of time trying to comply with exam guidelines from different countries. The software is therefore theoretically authorized for examination; however, Omega has not applied for certification by any organization. By clicking on I agree, you accept that neither Omega nor NumWorks can be held responsible in the event of a problem with this software." />
+                    <FormattedMessage id="installer.disclaimer" defaultMessage="NSIos is a template of Omega that is a redistribution of Epsilon that adds various features to it. We spend a lot of time trying to comply with exam guidelines from different countries. The software is therefore theoretically authorized for examination; however, Omega has not applied for certification by any organization. By clicking on I agree, you accept that neither Omega nor NumWorks can be held responsible in the event of a problem with this software." />
                     <Button onClick={this.install} className="popup__button popup__button-active"><FormattedMessage id="installer.agree" defaultMessage="I AGREE" /></Button>
                 </div>
 
                 <div className={"installer-thanks " + (this.state.installationFinished ? "installer-thanks-active" : "")}>
-                    <FormattedMessage id="installer.thanks" defaultMessage="Thank you for installing Omega! Your calculator is now running Omega {version}." values={{version: this.state.omegaVersion}} />
+                    <FormattedMessage id="installer.thanks" defaultMessage="Thank you for installing NSIos! Your calculator is now running Omega {version} with the NSIos template." values={{version: this.state.omegaVersion}} />
                 </div>
 
                 <div className={"installer-notcompatible " + (this.state.installerNotCompatibleWithThisBrowser ? "installer-notcompatible-active" : "")}>
