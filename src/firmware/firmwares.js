@@ -1,6 +1,21 @@
 export const releases = {
-  latest: "nsi.xyz-OS.1.2",
+  latest: "Psi.26.04.21",
   firmwares: [
+    {
+      name: "Psi.26.04.21",
+      commit: "46658f7077045b28906e257f544414e41f62381a",
+      changelog: ["New: ", "Ver: 26/04/2021", "Change: Update for Omega 1.22"],
+      compatibility: {
+        N0110: true,
+        N0100: false,
+        web: false,
+        android: false,
+        "3ds": false,
+      },
+      available: true,
+      langages: {
+        "0100": ["en", "fr", "nl", "pt", "it", "de", "es", "hu"],
+      },
     {
       name: "nsi.xyz-OS.1.2",
       commit: "46658f7077045b28906e257f544414e41f62381a",
@@ -17,37 +32,7 @@ export const releases = {
         "0100": ["en", "fr", "nl", "pt", "it", "de", "es", "hu"],
       },
     },
-    {
-      name: "nsi.xyz-OS.1.1_Bataille_navale",
-      commit: "46658f7077045b28906e257f544414e41f62381a",
-      changelog: ["New: ", "Ver: 2021-02-14", "Change: Game : Bataille navale"],
-      compatibility: {
-        N0110: true,
-        N0100: false,
-        web: false,
-        android: false,
-        "3ds": false,
-      },
-      available: true,
-      langages: {
-        "0100": ["en", "fr", "nl", "pt", "it", "de", "es", "hu"],
-      },
     },
-    {
-      name: "nsi.xyz-OS.1.1_Controleur",
-      commit: "46658f7077045b28906e257f544414e41f62381a",
-      changelog: ["New: ", "Ver: 2021-02-14", "Change: Utilitaire : Controleur de solde en temps reel"],
-      compatibility: {
-        N0110: true,
-        N0100: false,
-        web: false,
-        android: false,
-        "3ds": false,
-      },
-      available: true,
-      langages: {
-        "0100": ["en", "fr", "nl", "pt", "it", "de", "es", "hu"],
-      },
     },
     {
       name: "nsi.xyz-OS.1.1",
